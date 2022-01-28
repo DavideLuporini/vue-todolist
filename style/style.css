@@ -2,6 +2,7 @@ img {
     width: 50px;
 }
 
-.container {}
-
-.border-input {}
+.btn-close {
+    position: absolute;
+    right: 10px;
+}

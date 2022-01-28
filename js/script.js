@@ -37,7 +37,15 @@ var app = new Vue({
                 this.todos.push(newTodoObject);
             }
             this.newTodo = '';
+        },
+
+        deleteTodo(index) {
+            this.todos.splice(index, 1)
+        },
+
+        deleteAll() {
+            const deleteAllTodo = [];
+            this.todos = deleteAllTodo;
         }
-        // delete all
     }
 })
