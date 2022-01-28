@@ -1,8 +1,15 @@
+* {
+    cursor: pointer;
+}
+
 img {
     width: 50px;
 }
 
 .btn-close {
-    position: absolute;
     right: 10px;
+}
+
+.done {
+    background-color: rgba(9, 196, 9, 0.81);
 }

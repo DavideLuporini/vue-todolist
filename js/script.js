@@ -6,23 +6,23 @@ var app = new Vue({
         newTodo: '',
         todos: [{
                 todo: 'comprare il latte',
-                done: true,
+                done: false,
             },
             {
                 todo: 'comprare crocchette per gatti',
-                done: true,
+                done: false,
             },
             {
                 todo: 'comprare prosciutto',
-                done: true,
+                done: false,
             },
             {
                 todo: 'comprare samale',
-                done: true,
+                done: false,
             },
             {
                 todo: 'comprare tortellini',
-                done: true,
+                done: false,
             },
         ],
     },
@@ -46,6 +46,13 @@ var app = new Vue({
         deleteAll() {
             const deleteAllTodo = [];
             this.todos = deleteAllTodo;
-        }
+        },
+        todoCheck(index) {
+            const newTodo = this.todos.map((todo, i) => {
+                if (i === index) todo.done = !todo.done;
+                return todo;
+            });
+            this.todos = newTodo;
+        },
     }
 })
