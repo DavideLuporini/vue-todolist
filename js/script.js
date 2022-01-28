@@ -9,19 +9,19 @@ var app = new Vue({
                 done: true,
             },
             {
-                todo: 'comprare il latte',
+                todo: 'comprare crocchette per gatti',
                 done: true,
             },
             {
-                todo: 'comprare il latte',
+                todo: 'comprare prosciutto',
                 done: true,
             },
             {
-                todo: 'comprare il latte',
+                todo: 'comprare samale',
                 done: true,
             },
             {
-                todo: 'comprare il latte',
+                todo: 'comprare tortellini',
                 done: true,
             },
         ],

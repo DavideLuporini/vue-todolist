@@ -32,7 +32,7 @@
                         <button class="btn btn-danger" type="button" @click="deleteAll">elimina tutto</button>
                     </div>
                     <ul class="w-75 mx-auto my-5">
-                        <li v-for="(todo,index) in todos" class="list-group-item ms-5"><i class="far fa-square"></i><span class="ms-5 h5">{{ todo.todo }}</span><button type="button" class="btn-close" aria-label="close" @click="deleteTodo"></button></li>
+                        <li v-for="(todo,index) in todos" class="list-group-item ms-5"><i class="far fa-square"></i><span class="ms-5 h5">{{ todo.todo }}</span><button type="button" class="btn-close" aria-label="close" @click="deleteTodo(index)"></button></li>
 
                     </ul>
                 </main>
