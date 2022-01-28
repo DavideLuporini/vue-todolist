@@ -25,7 +25,12 @@
                 </div>
             </nav>
             <div class="container">
-                <main>
+                <main class="w-75 mx-auto">
+                    <div class="input-group mb-3 d-flex justify-content-center">
+                        <input type="text" class="form-controll " v-model="newTodo" @key-up.enter="addTodo">
+                        <button class="btn btn-light" type="button" @click="addTodo">Aggiungi todo</button>
+                        <button class="btn btn-danger" type="button">elimina tutto</button>
+                    </div>
                     <ul class="w-75 mx-auto my-5">
                         <li v-for="todo in todos" class="list-group-item ms-5"><i class="far fa-square"></i><span class="ms-5 h5">{{ todo.todo }}</span></li>
                     </ul>

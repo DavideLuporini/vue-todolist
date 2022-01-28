@@ -3,6 +3,7 @@ Vue.config.devtools = true;
 var app = new Vue({
     el: '#root',
     data: {
+        newTodo: '',
         todos: [{
                 todo: 'comprare il latte',
                 done: true,
@@ -23,6 +24,20 @@ var app = new Vue({
                 todo: 'comprare il latte',
                 done: true,
             },
-        ]
+        ],
+    },
+    methods: {
+        addTodo() {
+            const newTodo = this.newTodo.trim();
+            if (newTodo) {
+                const newTodoObject = {
+                    todo: newTodo,
+                    done: false,
+                }
+                this.todos.push(newTodoObject);
+            }
+            this.newTodo = '';
+        }
+        // delete all
     }
 })
